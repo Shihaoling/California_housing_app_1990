@@ -26,6 +26,7 @@ df = df[df.median_house_value <= median_house_price_filter]
 df = df[df.ocean_proximity.isin(location_filter)] 
 
 # filter data by income
+st.subheader('See more filters in the sidebar:')
 if income_level_filter == 'Low':
     df = df[df.median_income <= 2.5]
 elif income_level_filter == 'Medium':
