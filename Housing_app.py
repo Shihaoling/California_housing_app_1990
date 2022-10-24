@@ -37,6 +37,7 @@ elif income_level_filter == 'High':
 st.map(df)
 
 # draw the graph
+st.subheader('Histogram of the Median House Value')
 fig, ax = plt.subplots()
-df.median_house_value.hist(ax = ax)
+df.median_house_value.hist(ax = ax, bins = 30)
 st.pyplot(fig)
